@@ -27,7 +27,7 @@
         echo "successfuly created table: posts";
     }
     else{
-        echo "<p>$connection -> error</p>";
+        echo "table already exists";
     }
 
     $connection -> close();
