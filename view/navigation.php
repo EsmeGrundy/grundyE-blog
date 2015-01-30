@@ -4,6 +4,6 @@
 
 <nav>
     <ul>
-        <li><a href="<?php echo $path . "post.php"?>">Blog Post Form</a></li>
+        <li><a href="<?php /*echo $path . "post.php"*/ echo "/../grundyE-blog/post.php" ?>">Blog Post Form</a></li>
     </ul>
 </nav>
