@@ -1,4 +1,5 @@
 <?php
+
 require_once (__DIR__ . "/../model/config.php");
 
 $email = filter_input(INPUT_POST, "email", FILTER_SANITIZE_EMAIL);
@@ -10,16 +11,24 @@ $salt = "$5$" . "rounds = 5000$" . uniqid(mt_rand(), true) . "$";
 
 $hashedPassword = crypt($password, $salt);
 
-$query = $_SESSION["connection"] -> query("INSERT INTO users SET "
+$query = $_SESSION["connection"]->query("INSERT INTO users SET "
         . "email = '$email',"
         . "username = '$username' ,"
         . "password = '$hashedPassword' ,"
         . "salt = '$salt' "
-        );
+);
 
-if($query){
+if ($query) {
     echo "Successfully created user: $username";
+} else {
+    echo "<p>" . $_SESSION["connection"]->error . "</p>";
 }
-else{
-    echo "<p>" . $_SESSION["connection"] -> error . "</p>";
+
+$query2 = mysqli_query("SELECT username FROM users WHERE username='$username'", $_SESSION["connection"]);
+
+if (mysql_num_rows($query2) != 0) {
+//    header("location: " . $path . "/register.php");
+    echo "Username already exists";
+} else {
+    header("location: " . $path . "/index.php");
 }
