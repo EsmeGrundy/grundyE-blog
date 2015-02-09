@@ -5,17 +5,18 @@
         <group>
             <file>file:/C:/xampp/htdocs/grundyE-blog/model/config.php</file>
             <file>file:/C:/xampp/htdocs/grundyE-blog/login.php</file>
-            <file>file:/C:/xampp/htdocs/grundyE-blog/controller/login-verify.php</file>
             <file>file:/C:/xampp/htdocs/grundyE-blog/view/footer.php</file>
             <file>file:/C:/xampp/htdocs/grundyE-blog/view/login-form.php</file>
+            <file>file:/C:/xampp/htdocs/grundyE-blog/register.php</file>
+            <file>file:/C:/xampp/htdocs/grundyE-blog/post.php</file>
             <file>file:/C:/xampp/htdocs/grundyE-blog/index.php</file>
             <file>file:/C:/xampp/htdocs/grundyE-blog/view/navigation.php</file>
             <file>file:/C:/xampp/htdocs/grundyE-blog/view/register-form.php</file>
             <file>file:/C:/xampp/htdocs/grundyE-blog/controller/create-user.php</file>
             <file>file:/C:/xampp/htdocs/grundyE-blog/controller/login-user.php</file>
+            <file>file:/C:/xampp/htdocs/grundyE-blog/view/login-nav.php</file>
             <file>file:/C:/xampp/htdocs/grundyE-blog/controller/read-posts.php</file>
             <file>file:/C:/xampp/htdocs/grundyE-blog/controller/logout-user.php</file>
-            <file>file:/C:/xampp/htdocs/grundyE-blog/view/form.php</file>
         </group>
     </open-files>
 </project-private>
