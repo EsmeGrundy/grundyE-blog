@@ -5,7 +5,9 @@
         <group>
             <file>file:/C:/xampp/htdocs/grundyE-blog/model/config.php</file>
             <file>file:/C:/xampp/htdocs/grundyE-blog/login.php</file>
+            <file>file:/C:/xampp/htdocs/grundyE-blog/css/custom-style.css</file>
             <file>file:/C:/xampp/htdocs/grundyE-blog/view/footer.php</file>
+            <file>file:/C:/xampp/htdocs/grundyE-blog/view/header.php</file>
             <file>file:/C:/xampp/htdocs/grundyE-blog/view/login-form.php</file>
             <file>file:/C:/xampp/htdocs/grundyE-blog/register.php</file>
             <file>file:/C:/xampp/htdocs/grundyE-blog/post.php</file>

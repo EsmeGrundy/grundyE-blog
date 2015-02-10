@@ -2,3 +2,37 @@ body {
     padding-top: 70px;
 }
 
+.nav-button {
+    color:blue; background: #ebcccc;                          /*animates color on navbar for fade-in and fade-out*/
+    -o-transition:color .2s ease-out, background 1s ease-in;
+    -ms-transition:color .2s ease-out, background 1s ease-in;
+    -moz-transition:color .2s ease-out, background 1s ease-in;
+    -webkit-transition:color .2s ease-out, background 1s ease-in;
+    /* ...and now override with proper CSS property */
+    transition:color .2s ease-out, background 1s ease-in;
+}
+.nav-button:hover { 
+    color:orange; background:white; /*when a user hovers over the button, the backgrounds fades in and out*/
+}
+
+h2{
+    text-align: center;
+    color: red;
+}
+
+p{
+    text-align: center;
+}
+
+.post-text{
+    
+}
+
+.queries{
+    visibility: hidden;
+}
+
+.panel{
+    margin-left: 100px;
+    margin-right: 100px;
+}

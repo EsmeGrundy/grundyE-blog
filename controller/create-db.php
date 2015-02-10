@@ -11,7 +11,7 @@
         echo "successfuly created table: posts";
     }
     else{
-        echo "<p>" . $_SESSION["connection"]->error . "</p>";
+        echo "<p class='queries'>" . $_SESSION["connection"]->error . "</p>";
     }
     
     $query2 = $_SESSION["connection"] -> query("CREATE TABLE users ("
@@ -26,5 +26,5 @@
         echo "Successfully created table: users";
     }
     else{
-        echo "<p>" . $_SESSION["connection"]->error . "</p>";
+        echo "<p class='queries'>" . $_SESSION["connection"]->error . "</p>";
     }
