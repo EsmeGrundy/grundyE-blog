@@ -7,10 +7,11 @@
     
     $query = $_SESSION["connection"] -> query("INSERT INTO posts SET title = '$title', post ='$post'");
     if($query){
-        echo "<p>successfully inserted post: $title</p>";
+         header("location: " . $path . "/index.php");
     }
     else{
         echo "<p>" . $_SESSION["connection"]->error . "</p>";
+         header("location: " . $path . "/index.php");
     }
 
     
