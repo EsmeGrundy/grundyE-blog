@@ -33,6 +33,27 @@ p{
 }
 
 .panel{
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 100px;
+}
+
+#bgvid {
+    position: fixed; right: 0; bottom: 0;             /*makes background video full screen and sets it
+                                                      behind everything, sets poster image and makes it full
+                                                        screen too*/
+    min-width: 100%; min-height: 100%;
+    width: auto; height: auto; z-index: -100;
+    background: url(images/clouds.jpg) no-repeat;
+    background-size: cover;
+}
+
+.login{
+    text-align: center;
+    position: relative;
+}
+
+.register{
+    text-align: center;
+    position: relative;
 }

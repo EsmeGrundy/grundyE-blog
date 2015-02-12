@@ -11,7 +11,7 @@ require_once (__DIR__ . "/../controller/login-verify.php");
         </ul>
     </div>
 </nav>
-<nav class="navbar navbar-default navbar-fixed-bottom">
+<!--<nav class="navbar navbar-default navbar-fixed-bottom">
     <div class="container">
         <form class="navbar-form" role="search">
             <div class="input-group">
@@ -23,4 +23,4 @@ require_once (__DIR__ . "/../controller/login-verify.php");
         </form>
 
     </div>
-</nav>
+</nav>-->

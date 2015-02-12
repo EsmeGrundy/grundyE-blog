@@ -23,14 +23,3 @@ if ($query) {
 } else {
     echo "<p>" . $_SESSION["connection"]->error . "</p>";
 }
-//
-//$usernameCheck = mysqli_query("SELECT username FROM users WHERE username='$username'");
-//$userChecker = mysql_fetch_assoc($usernameCheck);
-//
-//if ($username === $userChecker["username"]) {
-////    header("location: " . $path . "/register.php");
-//    echo "Username already exists";
-//} else {
-////    header("location: " . $path . "/index.php");
-//    echo "Successfully created user: $username";
-//}

@@ -8,4 +8,7 @@
         <title></title>
     </head>
     <body>
-
+<!--        <video autoplay loop poster="images/clouds.jpg" id="bgvid">
+            <source src="videos/Clouds_(time_lapse).webm" type="video/webm">
+            <source src="videos/Clouds_time_lapse_.mp4" type="video/mp4">
+        </video>-->
