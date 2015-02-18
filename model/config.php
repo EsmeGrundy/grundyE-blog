@@ -11,7 +11,7 @@ $username = "root";
 $password = "root";
 $database = "blog_db";
 
-if(!isset($_SESSION["connection"])) {
-    $connection = new Database($host, $username, $password, $database);
-    $_SESSION["connection"] = $connection;
+if(!isset($_SESSION["connection"])) { //if the variable is not set, then...
+    $connection = new Database($host, $username, $password, $database); //create a new database
+    $_SESSION["connection"] = $connection; //connection to database
 }

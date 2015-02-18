@@ -13,9 +13,9 @@ $hashedPassword = crypt($password, $salt);
 
 $usernameCheck = mysqli_query("SELECT * FROM users WHERE Username='$username'");
 
-if($usernameCheck){
-    $numrows = mysql_num_rows($usernameCheck);
-    if ($numrows !== 0) {
+//if($usernameCheck){
+//    $numrows = mysql_num_rows($usernameCheck);
+    if (mysql_num_rows($usernameCheck) !== 0) {
         //    header("location: " . $path . "/register.php");
         echo "Username already exists";
     } else {
@@ -32,7 +32,7 @@ if($usernameCheck){
             echo "<p>" . $_SESSION["connection"]->error . "</p>";
         }
     }
-}
-else {
-     echo "<p>" . $_SESSION["connection"]->error . "</p>";
-}
+//}
+//else {
+//     echo "<p>" . $_SESSION["connection"]->error . "</p>";
+//}

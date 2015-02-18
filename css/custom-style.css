@@ -1,5 +1,6 @@
 body {
     padding-top: 70px;
+    padding-bottom: 70px;
 }
 
 .nav-button {
@@ -56,4 +57,9 @@ p{
 .register{
     text-align: center;
     position: relative;
+}
+
+#logo{
+    width: 50px;     /*changes size of logo*/
+    height: 50px;
 }
