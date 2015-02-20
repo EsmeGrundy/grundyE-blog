@@ -18,7 +18,7 @@
             header("location: " . $path . "/index.php");//returns to index.php
         }
         else{
-            echo "<p>Invalid Username and Password</p>";
+            echo "<p class='error-message'>" . "Invalid Username and Password" . "</p>";
             header("location: " . $path . "/login.php");//refreshes the login form
         }
     }

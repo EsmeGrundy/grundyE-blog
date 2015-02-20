@@ -63,3 +63,8 @@ p{
     width: 50px;     /*changes size of logo*/
     height: 50px;
 }
+
+.change-password{
+    text-align: center;
+    position: relative;
+}

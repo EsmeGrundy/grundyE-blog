@@ -11,14 +11,15 @@ $salt = "$5$" . "rounds = 5000$" . uniqid(mt_rand(), true) . "$";
 
 $hashedPassword = crypt($password, $salt);
 
-$usernameCheck = mysqli_query("SELECT * FROM users WHERE Username='$username'");
+//$usernameCheck = mysqli_query("SELECT FROM users WHERE Username='$username'");
 
 //if($usernameCheck){
 //    $numrows = mysql_num_rows($usernameCheck);
-    if (mysql_num_rows($usernameCheck) !== 0) {
-        //    header("location: " . $path . "/register.php");
-        echo "Username already exists";
-    } else {
+//    if (mysql_num_rows($usernameCheck) !== 0) {
+//        //    header("location: " . $path . "/register.php");
+//        echo "Username already exists";
+//    } 
+//    else {
         $query = $_SESSION["connection"]->query("INSERT INTO users SET "
         . "email = '$email',"
         . "username = '$username' ,"
@@ -31,7 +32,7 @@ $usernameCheck = mysqli_query("SELECT * FROM users WHERE Username='$username'");
         } else {
             echo "<p>" . $_SESSION["connection"]->error . "</p>";
         }
-    }
+//    }
 //}
 //else {
 //     echo "<p>" . $_SESSION["connection"]->error . "</p>";

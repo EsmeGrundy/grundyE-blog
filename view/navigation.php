@@ -24,6 +24,7 @@ if (!authenticateUser()) {
         <ul class="nav nav-justified">
             <li role="presentation" class="nav-button"><a href="<?php echo $path . "/post.php" ?>">Blog Post Form</a></li>
             <li role="presentation" class="nav-button"><a href="<?php echo $path . "/controller/logout-user.php" ?>">Log Out</a></li>
+            <li role="presentation" class="nav-button"><a href="<?php echo $path . "/change.php" ?>">Change Password</a></li>
         </ul>
     </div>
 </nav>

@@ -14,4 +14,7 @@
     <div>
         <button type="submit">Submit</button>
     </div>
+    <div>
+        <p><a href="<?php echo $path . "/change.php"; ?>">Change Password</a></p>
+    </div>
 </form>
