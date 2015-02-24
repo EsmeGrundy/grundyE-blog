@@ -6,7 +6,7 @@
             . "id int(11) NOT NULL AUTO_INCREMENT,"
             . "title varchar(255) NOT NULL,"
             . "post text NOT NULL,"
-            . "date string NOT NULL,"
+//            . "post-date timestamp,"
             . "PRIMARY KEY(id))");
     if($query){
         echo "successfuly created table: posts";

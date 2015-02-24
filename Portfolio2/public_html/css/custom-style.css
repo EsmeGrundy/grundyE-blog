@@ -1,0 +1,167 @@
+body {
+    padding-top: 30px;      /*makes background white and sets body slightyly below navbar*/
+    background-color: white;
+    position: relative;
+}
+
+nav {
+    font-size: 20px;    /*sets size of text in navbar*/
+}
+
+
+div {
+    border-style: hidden;   /*no visible borders with 20 pixels of space between content and borders*/
+    border-width: 2px;
+    border-color: white;
+    padding: 20px;
+}
+
+.container {
+    border-style: none;     /*no visible borders*/
+    border-color: white;
+}
+
+.row {
+    border-style: none;   /*no visible borders*/  
+    border-color: white;
+}
+
+.list-group-item {
+    border: 0;          /*no visible borders on Table of Contents*/
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: #f2dede;
+}
+
+.content {
+    border-style: hidden;   /*no visible borders*/
+    border-color: grey;
+}
+
+#current-link {
+    background-color: #46b8da   /*makes current link blue*/
+}
+
+.jumbotron {
+    background-image: url("http://wallpoper.com/images/00/43/54/14/sakura-cherry-blossom_00435414.jpg");
+    margin: 0;
+}
+
+.jumbotron-text {
+    color: white;   /*text (p) white*/
+}
+
+.jumbotron-head {
+    font-size: 60px;    /*text (h1) white*/
+    color: white;
+
+}
+
+.chelsea {
+    width: 400px;   /*resizes Chelsea logo*/
+    height: auto;
+}
+
+.dropdown1 {
+    list-style: none;   /*styles dropdown menu in About Me modal*/
+    text-align: left;
+    padding-left: 0px;
+}
+
+.jumbo-back {
+    background-image: url("http://wolbest.com/wp-content/uploads/2014/09/Cherry-Blossom-Tree.jpg");  /*sets background 
+                                                                                                    image for 
+                                                                                                    background jumbotron*/
+    background-size: cover;
+}
+
+.carousel-caption {
+    color: #ec971f;     /*makes carousel captions orange*/
+}
+
+.name {
+    font-size: 30px;    /*Made name stand out in navbar*/
+    color: #dca7a7;
+}
+
+.jumbo-projects {
+    background-image: url("http://www.gardeningknowhow.com/wp-content/uploads/2012/08/magnolia-tree1.jpg");
+    background-size: cover;
+}
+
+.jumbo-tech {
+    background-image: url("http://flowerspetal.files.wordpress.com/2013/08/yellow-red-lilies.jpg");
+    background-size: cover;
+}
+
+p {
+    color: white;
+}
+
+.flip-container {
+    perspective: 1000;
+}
+/* flip the pane when hovered */
+.flip-container:hover .flipper, .flip-container.hover .flipper {
+    transform: rotateY(180deg);
+}
+
+.flip-container, .front, .back {
+    width: 320px;
+    height: 480px;
+}
+
+/* flip speed goes here */
+.flipper {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+
+    position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+    backface-visibility: hidden;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+    z-index: 2;
+    /* for firefox 31 */
+    transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+    transform: rotateY(180deg);
+}
+
+.nav-button {
+    color:blue; background: #ebcccc;                          /*animates color on navbar for fade-in and fade-out*/
+    -o-transition:color .2s ease-out, background 1s ease-in;
+    -ms-transition:color .2s ease-out, background 1s ease-in;
+    -moz-transition:color .2s ease-out, background 1s ease-in;
+    -webkit-transition:color .2s ease-out, background 1s ease-in;
+    /* ...and now override with proper CSS property */
+    transition:color .2s ease-out, background 1s ease-in;
+}
+.nav-button:hover { 
+    color:orange; background:white; /*when a user hovers over the button, the backgrounds fades in and out*/
+}
+
+#logo{
+    width: 50px;     /*changes size of logo*/
+    height: 50px;
+}
+
+body {
+    cursor: url('http://media.tumblr.com/3f893283194c54556de5c0264b715b35/tumblr_inline_mmyx8ovwMv1qz4rgp.gif'), default; /*custom cursor*/
+}
+
+#cursor{
+    margin-left: 700px;
+}
