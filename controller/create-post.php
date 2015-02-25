@@ -1,12 +1,14 @@
 <?php
     require_once (__DIR__ . "/../model/config.php");
     
+//    $target = $path . "/uploads";
     
     $title = filter_input(INPUT_POST, "title", FILTER_SANITIZE_STRING);
     $post = filter_input(INPUT_POST, "post", FILTER_SANITIZE_STRING);
-//    $date = date("Y, m, d");
+//    $photo = filter_input(INPUT_POST, "photo", FILTER_SANITIZE_STRING);
+    $date = date("Y-m-d H:i:s");
     
-    $query = $_SESSION["connection"] -> query("INSERT INTO posts SET title = '$title', post ='$post'");
+    $query = $_SESSION["connection"] -> query("INSERT INTO posts SET title = '$title', post ='$post', date='$date'");
     if($query){
          header("location: " . $path . "/index.php");
     }

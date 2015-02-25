@@ -15,6 +15,9 @@
             echo "<p class='post-text'>" . $row['post'] . "</p>";
             echo "</div>";
             echo "<br />";
+            echo "<div>";
+             echo "<p>" . $row['date'] . "</p>";
+            echo "</div>";
             echo "</div>";
 
             
