@@ -1,6 +1,6 @@
 body {
     padding-top: 70px;
-    padding-bottom: 70px;
+    /*padding-bottom: 70px;*/
 }
 
 .nav-button {
@@ -26,7 +26,7 @@ p{
 }
 
 .post-text{
-    
+
 }
 
 .queries{
@@ -67,4 +67,14 @@ p{
 .change-password{
     text-align: center;
     position: relative;
+}
+
+.blog-post{
+    text-align: center;
+    position: relative;
+}
+
+.jumbotron{
+    background-image: url(http://upload.wikimedia.org/wikipedia/commons/e/ed/2004_stellar_quake_full.jpg);
+    background-size: cover;
 }

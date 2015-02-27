@@ -9,31 +9,19 @@ $password = filter_input(INPUT_POST, "password", FILTER_SANITIZE_STRING);
 
 $salt = "$5$" . "rounds = 5000$" . uniqid(mt_rand(), true) . "$";
 
-$hashedPassword = crypt($password, $salt);
+$hashedPassword = crypt($password, $salt); //encrypts the password given by the user
 
-//$usernameCheck = mysqli_query("SELECT FROM users WHERE Username='$username'");
-
-//if($usernameCheck){
-//    $numrows = mysql_num_rows($usernameCheck);
-//    if (mysql_num_rows($usernameCheck) !== 0) {
-//        //    header("location: " . $path . "/register.php");
-//        echo "Username already exists";
-//    } 
-//    else {
-        $query = $_SESSION["connection"]->query("INSERT INTO users SET "
+$query = $_SESSION["connection"]->query("INSERT INTO users SET "  //queries the database to put the users' email, username, hashed password and salt into database
         . "email = '$email',"
         . "username = '$username' ,"
         . "password = '$hashedPassword' ,"
         . "salt = '$salt' "
-        );
+);
 
-        if ($query) {
-            echo "Successfully created user: $username";
-        } else {
-            echo "<p>" . $_SESSION["connection"]->error . "</p>";
-        }
-//    }
-//}
-//else {
-//     echo "<p>" . $_SESSION["connection"]->error . "</p>";
-//}
+if ($query) { //if the query is true...
+    echo "Successfully created user: $username";
+    header("location: " . $path . "/index.php"); //returrns user to home page
+} else {
+    echo "<p>" . $_SESSION["connection"]->error . "</p>"; //echoes error
+}
+ 

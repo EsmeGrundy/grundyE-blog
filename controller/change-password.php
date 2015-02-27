@@ -15,10 +15,10 @@ $query = $_SESSION["connection"]->query("SELECT salt, password FROM users WHERE 
  if($query -> num_rows === 1){  //if there is only one row where the username is equal to the variable $username, then...
         $row = $query->fetch_array(); //gets the data contained within the query
         if($row["password"] === crypt($oldPassword, $row["salt"])){ //if the password in the table is equal to the encrypted password entered, then...
-            if($newPassword===$confirmPassword){
-                $query2 = $_SESSION["connection"]->query("UPDATE users SET password='$hashedPassword' WHERE username='$username'");
-                if(!$query2){
-                      echo "<p class='error-message'>" . $_SESSION["connection"]->error . "</p>";
+            if($newPassword===$confirmPassword){ //if the new password is the same as the confirm password...
+                $query2 = $_SESSION["connection"]->query("UPDATE users SET password='$hashedPassword' WHERE username='$username'");//query the databasee to update the users table
+                if(!$query2){//if query2 is not true
+                      echo "<p class='error-message'>" . $_SESSION["connection"]->error . "</p>"; //display error message
                 }
                 else{
                    echo "<p class='error-message'>" . "Successfully changed password" . "</p>";

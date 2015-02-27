@@ -22,16 +22,3 @@ require_once (__DIR__ . "/../controller/login-verify.php");
         </ul>
     </div>
 </nav>
-<!--<nav class="navbar navbar-default navbar-fixed-bottom">
-    <div class="container">
-        <form class="navbar-form" role="search">
-            <div class="input-group">
-                <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">
-                <div class="input-group-btn">
-                    <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
-                </div>
-            </div>
-        </form>
-
-    </div>
-</nav>-->

@@ -10,6 +10,6 @@ else{//if the user is not logged in, shows nav bar with log-in button and regist
     require_once (__DIR__ . "/view/login-nav.php");
 }
 require_once(__DIR__ . "/controller/create-db.php");
-require_once (__DIR__ . "/view/footer.php");
 require_once (__DIR__ . "/controller/read-posts.php");
+require_once (__DIR__ . "/view/footer.php");
 
